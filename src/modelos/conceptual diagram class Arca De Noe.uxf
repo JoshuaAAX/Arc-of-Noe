@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>210</y>
+      <w>400</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ControlArcaDeNoe
+--
+-estadoJuego
+-puntos
+-ronda
+-arrayCartas
+--
++createBoard()
++resetBoard()
++addCards()
++cartasIguales(carta1, carta2)
++determinarJuego()
+getter and setters
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>200</y>
+      <w>340</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>VistaGUI
+--
+-escucha
+-zonaJuego, zonaResultados: JPanel
+-botones = new ArrayList&lt;JButton&gt;(): List&lt;JButton&gt;
+-puntos: JLabel
+-titulo: Titulos
+-salir: JButton
+-imagen: ImageIcon
+-controlArcaDeNoe
+-temporizador 
+
+--
++VistaGUI()
+-initGUI()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>540</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>PrincipalArcaDeNoe
+--
+main()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>40</y>
+      <w>230</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Carta
+--
+-idImage
+-estado:
+--
+getIdImage()
+isEstado()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>130</y>
+      <w>40</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>290</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>430</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+</diagram>
